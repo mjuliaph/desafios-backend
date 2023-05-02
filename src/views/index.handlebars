@@ -1,0 +1,44 @@
+{{!-- <div>
+    <h1>Probando handlebars :) {{name}}
+    </h1>
+</div>
+
+<div>
+    <h2>Chat</h2>
+    <input id="textbox">
+    <p id="logs"></p>
+</div> --}}
+<h2 class="subtitulo">Lista de productos disponibles!</h2>
+
+<section class="row">
+    {{#each productsList}}
+    <article class="col s12 m6 l3">
+        <div class="card">
+            {{!-- <div class="card-image">
+                <img src="images/sample-1.jpg">
+                <span class="card-title">{{title}}</span>
+            </div> --}}
+            <div class="card-content">
+                <h2>{{title}}</h2>
+                <p>Sinopsis: {{description}}</p>
+            </div>
+            <div class="card-action">
+                <p><b>Precio: {{price}}</b></p>
+                <span>Stock: {{stock}}</span>
+                <span>Código: {{code}}</span>
+                {{!-- <a href="#">libro</a> --}}
+                {{!-- <a href="#">Peli</a> --}}
+            </div>
+        </div>
+    </article>
+    {{/each}}
+</section>
+
+
+
+
+
+
+
+<script src="./socket.io/socket.io.js"></script>
+<script src="./js/index.js"></script>

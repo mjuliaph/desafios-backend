@@ -1,0 +1,30 @@
+body {
+    background-color: rgba(0, 0, 128, 0.329);
+    color: #ffffff;
+}
+
+.subtitulo {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.card {
+    margin: 1rem;
+    color: #000000;
+}
+
+.card .card-content {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.card h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
